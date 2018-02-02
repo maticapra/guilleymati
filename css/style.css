@@ -877,13 +877,13 @@ Parallax
 }
 
 /* Ventana emergente */
-#popup1, #popup2, #popup3, #popup4{
+#popup1{
     visibility: hidden;
     opacity: 0;
     margin-top: -300px;
  }
 
- #popup1:target, #popup2:target, #popup3:target, #popup4:target{
+ #popup1:target {
     visibility:visible;
     opacity: 1;
     background-color: rgba(0,0,0,0.8);
@@ -897,7 +897,7 @@ Parallax
     transition:all 1s;
  }
 
- .popup1-contenedor, .popup2-contenedor, .popup3-contenedor, .popup4-contenedor{
+ .popup1-contenedor{
     position: relative;
     margin:7% auto;
     padding:30px 50px;
@@ -907,7 +907,7 @@ Parallax
     width:50%;
  }
  
- a.popup1-cerrar, a.popup2-cerrar, a.popup3-cerrar, a.popup4-cerrar{
+ a.popup1-cerrar{
     position: absolute;
     top:3px;
     right:3px;
