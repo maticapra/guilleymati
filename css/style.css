@@ -880,7 +880,7 @@ Parallax
 #popup1{
     visibility: hidden;
     opacity: 0;
-    margin-top: -300px;
+    margin-top: 0;
  }
 
  #popup1:target {
@@ -903,8 +903,8 @@ Parallax
     padding:30px 50px;
     background-color: #fafafa;
     color:#333;
-    border-radius: 3px;
-    width:50%;
+    border-radius: 1px;
+    width:80%;
  }
  
  a.popup1-cerrar{

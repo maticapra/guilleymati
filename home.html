@@ -47,7 +47,7 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
                     <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand" href="index.html">
+                <a class="navbar-brand" href="home.html">
                     <h1>Mati & Guille</h1>
                 </a>
             </div>
@@ -168,7 +168,8 @@
         		        </div>
 					</div>
             	</div>
-
+			</div>
+			<div class="row">
 				<div class="col-md-3">
 					<div class="wow bounceInUp" data-wow-delay="1s">
 						<div class="team boxed-grey">
@@ -220,7 +221,9 @@
         		        </div>
 					</div>
             	</div>
+			</div>
 
+			<div class="row">
 				<div class="col-md-3">
 					<div class="wow bounceInUp" data-wow-delay="1s">
 						<div class="team boxed-grey">
@@ -272,7 +275,9 @@
         		        </div>
 					</div>
             	</div>
+			</div>
 
+			<div class="row">
 				<div class="col-md-3">
 					<div class="wow bounceInUp" data-wow-delay="1s">
 						<div class="team boxed-grey">
@@ -502,6 +507,16 @@
 										<div class="validation"></div>
 									</div>
 								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<label>Eleccion</label>
+										<label for="titulo_eleccion_mensaje" id="titulo_eleccion_mensaje"></label>
+										<hr />
+										<label>Precio: </label>
+										<label for="precio_eleccion_mensaje" id="precio_eleccion_mensaje"></label>										
+										<div class="validation"></div>
+									</div>
+								</div>
 								<div class="col-md-12">
 									<button type="submit" class="btn btn-skin pull-right" id="btnContactUs">
 										¡Enviar!</button>
@@ -609,6 +624,13 @@
 	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 	<script type="text/javascript">
   		 (function(){
+			var tit_pop = document.getElementById('titulo_popup')
+			var pre_pop = document.getElementById('precio_popup')
+			var tit_eleccion_mensaje = document.getElementById('titulo_eleccion_mensaje')
+			var pre_eleccion_mensaje = document.getElementById('precio_eleccion_mensaje')
+			tit_eleccion_mensaje.innerText = "Sin Elección"
+			pre_eleccion_mensaje.innerText = "$0"
+
     	  emailjs.init("user_9iipkf1Bi8hUBfgHJjuhb");
    			var boton = document.getElementById('btnContactUs')
 			
@@ -618,9 +640,13 @@
 						name: document.getElementById('name').value, 
 						email: document.getElementById('email').value,
 						subject: document.getElementById('subject').value,
-						message: document.getElementById('message').value
+						message: document.getElementById('message').value,
+						tit: document.getElementById('titulo_eleccion_mensaje').innerText,
+						pre: document.getElementById('precio_eleccion_mensaje').innerText
 					});
 				swal("Mensaje enviado!", "No te olvides de hacer la transferencia","success")
+				
+				
 			})
 			
 			var masinfo = document.getElementById('mas_info')
@@ -638,25 +664,32 @@
 			var tit4 = document.getElementById('titulo4').innerText
 			var pre4 = document.getElementById('precio4').innerText
 
-			var tit_pop = document.getElementById('titulo_popup')
-			var pre_pop = document.getElementById('precio_popup')
+			
 			
 			eleccion1.addEventListener("click",function(){
 				tit_pop.innerText = tit1
 				pre_pop.innerText = pre1
+				tit_eleccion_mensaje.innerText = tit1
+				pre_eleccion_mensaje=pre1
 			})
 			eleccion2.addEventListener("click",function(){
 				tit_pop.innerText = tit2
 				pre_pop.innerText = pre2
+				tit_eleccion_mensaje.innerText = tit2
+				pre_eleccion_mensaje=pre2
 				swal(tit2 + "\n" +pre2 + "QUE BUENO!")
 			})
 			eleccion3.addEventListener("click",function(){
 				tit_pop.innerText = tit3
 				pre_pop.innerText = pre3
+				tit_eleccion_mensaje.innerText = tit3
+				pre_eleccion_mensaje=pre3
 			})
 			eleccion4.addEventListener("click",function(){
 				tit_pop.innerText = tit4
 				pre_pop.innerText = pre4
+				tit_eleccion_mensaje.innerText = tit4
+				pre_eleccion_mensaje=pre4
 			})
 			masinfo.addEventListener("click",function(){
 				swal("Información","La forma mas sencilla de hacernos llegar el dinero del regalo es por transferencia bancaria desde tu homebanking o mediante un cajero automático:\n Podes realizar una transferencia bancaria del importe elegido a la siguiente cuenta: \n CBU: 123456789 \n Titular: Guillermina Sendin \n etc \n Otra forma es mediante dinero en efectivo a los novios o a una alcancía que estará en la fiesta.")
