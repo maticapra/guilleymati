@@ -10,9 +10,9 @@
 
 @font-face {
 
-font-family: 'dulcelin';
-src: url("fonts/dulcelin.otf");
-src: url("fonts/dulcelin.otf") format(‘opentype’);
+font-family: 'dulcelin-webfont';
+src: url("fonts/dulcelin-webfont/dulcelin-webfont.ttf");
+src: url("fonts/dulcelin-webfont/dulcelin-webfont.ttf") format(‘truetype’);
 
 }
 
@@ -33,7 +33,7 @@ html {
 
 h2,h4{
     margin: 0 0 30px;
-    font-family: dulcelin;
+    font-family: dulcelin-webfont;
     font-weight: 200;
     letter-spacing: 1px;
 }
@@ -370,7 +370,7 @@ hr {
 	font-size: 300%;
 	/*line-height: 60px;
 	font-weight: 700;*/
-	font-family: dulcelin;
+	font-family: dulcelin-webfont;
 	background-color: rgba(0, 0, 0, 0);
 	text-decoration: none;
 	border-width: 0px;
