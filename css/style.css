@@ -11,8 +11,8 @@
 @font-face {
 
 font-family: 'dulcelin-webfont';
-src: url("fonts/dulcelin-webfont/dulcelin-webfont.ttf");
-src: url("fonts/dulcelin-webfont/dulcelin-webfont.ttf") format(‘truetype’);
+src: url("../css/fonts/dulcelin-webfont/dulcelin-webfont.ttf");
+src: url("../css/fonts/dulcelin-webfont/dulcelin-webfont.ttf") format(‘truetype’);
 
 }
 
