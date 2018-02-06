@@ -48,7 +48,7 @@
                     <i class="fa fa-bars"></i>
                 </button>
                 <a class="navbar-brand" href="home.html">
-                    <h1>Guille y Mati</h1>
+                    <h1> ♥ </h1>
                 </a>
             </div>
 
@@ -62,8 +62,6 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
           <ul class="dropdown-menu">
-            <li><a href="#">Example menu</a></li>
-            <li><a href="#">Example menu</a></li>
             <li><a href="#">Example menu</a></li>
           </ul>
         </li>
@@ -125,7 +123,7 @@
 						<div class="team boxed-grey">
 							<div class="inner">
 								<h5 id="titulo1">Hospedaje en Santa Marta</h5>
-								<a href="#about" id="mas_info" class="popup-link">Mas información</a>
+								<a href="#popup1" class="popup-link">Mas información</a>
 								<p id="precio1" class="subtitle">$980</p>
 								<div class="avatar">
 									<a href="#popup1" id="eleccion1" class="popup-link">
@@ -178,10 +176,10 @@
 					<div class="wow bounceInUp" data-wow-delay="0.2s">
 						<div class="team boxed-grey">
 							<div class="inner">
-								<h5>Aire acondicionado Split Frio/Calor</h5>
+								<h5 id="titulo5">Aire acondicionado Split Frio/Calor</h5>
 								<a href="#popup1" class="popup-link">Mas información</a>
-								<p class="subtitle">$9799</p>
-								<div class="avatar"><a href="#popup1" class="popup-link"><img src="img/team/split.jpg" alt="" class="img-responsive img-circle zoom" /></a></div>
+								<p id="precio5" class="subtitle">$9799</p>
+								<div class="avatar"><a href="#popup1" id="eleccion5" class="popup-link"><img src="img/team/split.jpg" alt="" class="img-responsive img-circle zoom" /></a></div>
 		                    </div>
         		        </div>
 					</div>
@@ -191,10 +189,10 @@
 					<div class="wow bounceInUp" data-wow-delay="0.5s">
 						<div class="team boxed-grey">
 							<div class="inner">
-								<h5>1/3 de Aire Acondicionado Split</h5>
+								<h5 id="titulo6">1/3 de Aire Acondicionado Split</h5>
 								<a href="#popup1" class="popup-link">Mas información</a>
-								<p class="subtitle">$3266</p>
-								<div class="avatar"><a href="#popup1" class="popup-link"><img src="img/team/1-3-split.jpg" alt="" class="img-responsive img-circle zoom" /></a></div>
+								<p id="precio6" class="subtitle">$3266</p>
+								<div class="avatar"><a href="#popup1" id="eleccion6" class="popup-link"><img src="img/team/1-3-split.jpg" alt="" class="img-responsive img-circle zoom" /></a></div>
 		                    </div>
         		        </div>
 					</div>
@@ -204,10 +202,10 @@
 					<div class="wow bounceInUp" data-wow-delay="0.8s">
 						<div class="team boxed-grey">
 							<div class="inner">
-								<h5>Mueble Living</h5>
+								<h5 id="titulo7" >Mueble Living</h5>
 								<a href="#popup1" class="popup-link">Mas información</a>
-								<p class="subtitle">$10000</p>
-								<div class="avatar"><a href="#popup1" class="popup-link"><img src="img/team/living.jpg" alt="" class="img-responsive img-circle zoom" /></a></div>
+								<p id="precio7" class="subtitle">$10000</p>
+								<div class="avatar"><a href="#popup1" id="eleccion7" class="popup-link"><img src="img/team/living.jpg" alt="" class="img-responsive img-circle zoom" /></a></div>
 		                    </div>
         		        </div>
 					</div>
@@ -340,21 +338,16 @@
 
 		<div class="modal-wrapper" id="popup1">
 			<div class="popup1-contenedor">
-			   <h2>Buena elección!</h2>
+			   <h2>¡Buena elección!</h2>
 			   <h3 id="titulo_popup"></h3>
 			   <h3 id="precio_popup"></h3>
-				<hr />
-			   <p>La forma de hacernos llegar el dinero del regalo mas sencilla es por transferencia bancaria desde tu homebanking o mediante un cajero automático:
-					<br />
-					Podes realizar una transferencia bancaria del importe elegido a la siguiente cuenta:
+			   <p>Podes realizar una transferencia bancaria del importe elegido a la siguiente cuenta:
 					<br />
 					CBU: 123456789
 					<br />
 					Titular: Guillermina Sendin
-					<br />
-					etc   
 					<hr />
-				   	Otra forma es mediante dinero en efectivo a los novios o a una alcancía que estará en la fiesta. 
+				   	Sino habrá una alcancía en la fiesta para que puedas llevar efectivo. 
 					<a href="#contact"><button type="submit" class="btn btn-skin pull-right" id="btnConfirmar">¡Confirmar!</button></a>
 			    </p>			   
 				<a class="popup1-cerrar" href="#about">X</a>
@@ -653,11 +646,13 @@
 				
 			})
 			
-			var masinfo = document.getElementById('mas_info')
+			var masinfo = document.getElementsByClassName('popup-link')
 			var eleccion1 = document.getElementById('eleccion1')
 			var eleccion2 = document.getElementById('eleccion2')
 			var eleccion3 = document.getElementById('eleccion3')
 			var eleccion4 = document.getElementById('eleccion4')
+			var eleccion5 = document.getElementById('eleccion5')
+
 
 			var tit1 = document.getElementById('titulo1').innerText
 			var pre1 = document.getElementById('precio1').innerText
@@ -667,6 +662,8 @@
 			var pre3 = document.getElementById('precio3').innerText
 			var tit4 = document.getElementById('titulo4').innerText
 			var pre4 = document.getElementById('precio4').innerText
+			var tit5 = document.getElementById('titulo5').innerText
+			var pre5 = document.getElementById('precio5').innerText
 
 			
 			
@@ -674,26 +671,31 @@
 				tit_pop.innerText = tit1
 				pre_pop.innerText = pre1
 				tit_eleccion_mensaje.innerText = tit1
-				pre_eleccion_mensaje=pre1
+				pre_eleccion_mensaje.innerText = pre1
 			})
 			eleccion2.addEventListener("click",function(){
 				tit_pop.innerText = tit2
 				pre_pop.innerText = pre2
 				tit_eleccion_mensaje.innerText = tit2
-				pre_eleccion_mensaje=pre2
-				swal(tit2 + "\n" +pre2 + "QUE BUENO!")
+				pre_eleccion_mensaje.innerText = pre2
 			})
 			eleccion3.addEventListener("click",function(){
 				tit_pop.innerText = tit3
 				pre_pop.innerText = pre3
 				tit_eleccion_mensaje.innerText = tit3
-				pre_eleccion_mensaje=pre3
+				pre_eleccion_mensaje.innerText = pre3
 			})
 			eleccion4.addEventListener("click",function(){
 				tit_pop.innerText = tit4
 				pre_pop.innerText = pre4
 				tit_eleccion_mensaje.innerText = tit4
-				pre_eleccion_mensaje=pre4
+				pre_eleccion_mensaje.innerText = pre4
+			})
+				eleccion5.addEventListener("click",function(){
+				tit_pop.innerText = tit5
+				pre_pop.innerText = pre5
+				tit_eleccion_mensaje.innerText = tit5
+				pre_eleccion_mensaje.innerText = pre5
 			})
 			masinfo.addEventListener("click",function(){
 				swal("Información","La forma mas sencilla de hacernos llegar el dinero del regalo es por transferencia bancaria desde tu homebanking o mediante un cajero automático:\n Podes realizar una transferencia bancaria del importe elegido a la siguiente cuenta: \n CBU: 123456789 \n Titular: Guillermina Sendin \n etc \n Otra forma es mediante dinero en efectivo a los novios o a una alcancía que estará en la fiesta.")
