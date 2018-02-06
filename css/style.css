@@ -8,12 +8,19 @@
 /* ==== Google font ==== */
 @import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic|Montserrat:700|Merriweather:400italic');
 
+@font-face {
+
+font-family: dulcelin;
+src: url("fonts/dulcelin.otf");
+src: url("fonts/dulcelin.otf") format(‘opentype’);
+
+}
 
 body {
     width: 100%;
     height: 100%;
     font-family: neucha;
-	font-weight: 300;
+	font-weight: 200;
     color: #666;
     background-color: #fff;
 }
@@ -23,10 +30,16 @@ html {
     height: 100%;
 }
 
+
+h2,h4{
+    margin: 0 0 30px;
+    font-family: dulcelin;
+    font-weight: 200;
+    letter-spacing: 1px;
+}
+
 h1,
-h2,
 h3,
-h4,
 h5,
 h6 {
     margin: 0 0 30px;
@@ -281,7 +294,7 @@ hr {
 
 .section-heading h2 {
 	font-size: 40px;
-	font-family: handlee;
+	font-family: dulcelin;
 }
 .section-heading i {
 	margin-bottom: 20px;
@@ -319,15 +332,15 @@ hr {
 ============================ */
 
 .intro {
-	width:100%;
-	position:relative;
+    width: 100%;
+	position: relative;
 	background: url(../img/bg1.jpg) no-repeat top center;
     background-size: cover;
     height: auto;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    /* height: 100%; */
+   /* height: 100%;*/
 }
 
 #intro.intro {
@@ -336,7 +349,7 @@ hr {
 
 .intro .slogan {
 	text-align: center;
-
+  
 }
 
 .intro .page-scroll {
@@ -354,24 +367,26 @@ hr {
 .intro .slogan h2 {
 	color: #FFF;
 	text-shadow: none;
-	font-size: 600%;
+	font-size: 300%;
 	/*line-height: 60px;
 	font-weight: 700;*/
-	font-family: handlee;
+	font-family: dulcelin;
 	background-color: rgba(0, 0, 0, 0);
 	text-decoration: none;
-	text-transform: uppercase;
 	border-width: 0px;
 	border-color: #000;
 	border-style: none;
 	text-shadow: -1px 0 1px #000;
+    font-weight: 600;
 }
 
 .intro .slogan h4 {
 	color: #fff;
 	text-shadow: -1px 1px 1px #000;
 	font-family: neucha;
-	font-size: 200%;
+    text-transform: uppercase;
+	font-size: 100%;
+    font-weight: 100;
 }
 
 
@@ -394,7 +409,7 @@ hr {
 
 }
 .popup-link{
-	font-family: neucha;
+	font-family: dulcelin;
 }
 .avatar {
 	margin-bottom: 20px;
@@ -464,7 +479,7 @@ hr {
 }
 
 .service-desc p{
-	font-family: neucha;
+	font-family: dulcelin;
 }
 /* ===========================
 --- Contact
@@ -484,7 +499,7 @@ form#contact-form input,form#contact-form select,form#contact-form textarea {
 	border: 1px solid #eee;
   -webkit-box-shadow: none;
           box-shadow:  none;
-		  font-family: neucha;
+		  font-family: dulcelin;
 }
 
 form#contact-form input:focus,form#contact-form select:focus,form#contact-form textarea:focus {
@@ -510,7 +525,7 @@ font-family: handlee;
 }
 
 .widget-contact p{
-font-family: neucha;
+font-family: dulcelin;
 }
 
 .validation {
