@@ -95,23 +95,26 @@
 				<p>Queremos compartirles algunas de las imágenes</p>
 			</div>
 			
-			<div class="slideshow-container">
+			
+		</div>
+
+		<div class="slideshow-container">
 
 				<!-- Full-width images with number and caption text -->
 				<div class="mySlides fade">
-					<div class="numbertext">1 / 3</div>
+					<div class="numbertext">1</div>
 					<img src="img/team/slide1.jpg" style="width:50%">
 					<div class="text">Caption Text</div>
 				</div>
 
 				<div class="mySlides fade">
-					<div class="numbertext">2 / 3</div>
+					<div class="numbertext">2</div>
 					<img src="img/team/slide2.jpg" style="width:50%">
 					<div class="text">Caption Two</div>
 				</div>
 
 				<div class="mySlides fade">
-					<div class="numbertext">3 / 3</div>
+					<div class="numbertext">3</div>
 					<img src="img/team/slide3.jpg" style="width:50%">
 					<div class="text">Caption Three</div>
 				</div>
@@ -129,7 +132,7 @@
 			<span class="dot" onclick="currentSlide(3)"></span> 
 			</div>
 
-		</div>
+
 		<div class="wow bounceInDown" data-wow-delay="0.4s">
 			<div class="section-heading">
 				<h2>Videos!</h2>
@@ -665,6 +668,7 @@
     <script src="js/jquery.easing.min.js"></script>	
 	<script src="js/jquery.scrollTo.js"></script>
 	<script src="js/wow.min.js"></script>
+	<script src="js/slide.js"></script>
     <!-- Custom Theme JavaScript -->
     <script src="js/custom.js"></script>
     <script src="contactform/contactform.js"></script>
@@ -861,37 +865,12 @@
 				swal("Información","La forma mas sencilla de hacernos llegar el dinero del regalo es por transferencia bancaria desde tu homebanking o mediante un cajero automático:\n Podes realizar una transferencia bancaria del importe elegido a la siguiente cuenta: \n CBU: 0150519101000130522660 - Alias: SUMA.RETO.ARMADA - Cuenta: Caja de ahorro $ 0519/01130522/66 \n Titular: Guillermina Sendin - CUIL/CUIT: 27-36778496-8 \n etc \n Otra forma es mediante dinero en efectivo a los novios o a una alcancía que estará en la fiesta.")
 			})
 
+
+
 		})();
 
-		// SLIDE IMG
-		var slideIndex = 1;
-		showSlides(slideIndex);
-
-		// Next/previous controls
-		function plusSlides(n) {
-		showSlides(slideIndex += n);
-		}
-
-		// Thumbnail image controls
-		function currentSlide(n) {
-		showSlides(slideIndex = n);
-		}
-
-		function showSlides(n) {
-		var i;
-		var slides = document.getElementsByClassName("mySlides");
-		var dots = document.getElementsByClassName("dot");
-		if (n > slides.length) {slideIndex = 1} 
-		if (n < 1) {slideIndex = slides.length}
-		for (i = 0; i < slides.length; i++) {
-			slides[i].style.display = "none"; 
-		}
-		for (i = 0; i < dots.length; i++) {
-			dots[i].className = dots[i].className.replace(" active", "");
-		}
-		slides[slideIndex-1].style.display = "block"; 
-		dots[slideIndex-1].className += " active";
-		}
+		
+		
 
 	</script>
     
