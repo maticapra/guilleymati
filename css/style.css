@@ -899,7 +899,7 @@ Parallax
 
 /* Ventana emergente */
 #popup1{
-    visibility: hidden;
+    visibility: visible;
     opacity: 0;
     margin-top: 0;
  }
