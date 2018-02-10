@@ -1,34 +1,38 @@
 (function ($) {
 
-	
-			// SLIDE IMG
-		var slideIndex = 1;
-		showSlides(slideIndex);
+	new WOW().init();
 
-		// Next/previous controls
-		function plusSlides(n) {
-		showSlides(slideIndex += n);
-		}
+	jQuery(window).load(function() { 
+		jQuery("#preloader").delay(100).fadeOut("slow");
+		jQuery("#load").delay(100).fadeOut("slow");
+	});
 
-		// Thumbnail image controls
-		function currentSlide(n) {
-		showSlides(slideIndex = n);
-		}
 
-		function showSlides(n) {
-		var i;
-		var slides = document.getElementsByClassName("mySlides");
-		var dots = document.getElementsByClassName("dot");
-		if (n > slides.length) {slideIndex = 1} 
-		if (n < 1) {slideIndex = slides.length}
-		for (i = 0; i < slides.length; i++) {
-			slides[i].style.display = "none"; 
+	//jQuery to collapse the navbar on scroll
+	$(window).scroll(function() {
+		if ($(".navbar").offset().top > 50) {
+			$(".navbar-fixed-top").addClass("top-nav-collapse");
+		} else {
+			$(".navbar-fixed-top").removeClass("top-nav-collapse");
 		}
-		for (i = 0; i < dots.length; i++) {
-			dots[i].className = dots[i].className.replace(" active", "");
-		}
-		slides[slideIndex-1].style.display = "block"; 
-		dots[slideIndex-1].className += " active";
-		}
+	});
+
+	//jQuery for page scrolling feature - requires jQuery Easing plugin
+	$(function() {
+		$('.navbar-nav li a').bind('click', function(event) {
+			var $anchor = $(this);
+			$('html, body').stop().animate({
+				scrollTop: $($anchor.attr('href')).offset().top
+			}, 1500, 'easeInOutExpo');
+			event.preventDefault();
+		});
+		$('.page-scroll a').bind('click', function(event) {
+			var $anchor = $(this);
+			$('html, body').stop().animate({
+				scrollTop: $($anchor.attr('href')).offset().top
+			}, 1500, 'easeInOutExpo');
+			event.preventDefault();
+		});
+	});
 
 })(jQuery);

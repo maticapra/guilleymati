@@ -17,6 +17,7 @@
 	<link href="css/animate.css" rel="stylesheet" />
     <!-- Squad theme CSS -->
     <link href="css/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="ism/css/my-slider.css"/>
 	<link href="color/default.css" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Englebert" rel="stylesheet">
@@ -98,40 +99,26 @@
 			
 		</div>
 
-		<div class="slideshow-container">
-
-				<!-- Full-width images with number and caption text -->
-				<div class="mySlides fade">
-					<div class="numbertext">1</div>
-					<img src="img/team/slide1.jpg" style="width:50%">
-					<div class="text">Caption Text</div>
-				</div>
-
-				<div class="mySlides fade">
-					<div class="numbertext">2</div>
-					<img src="img/team/slide2.jpg" style="width:50%">
-					<div class="text">Caption Two</div>
-				</div>
-
-				<div class="mySlides fade">
-					<div class="numbertext">3</div>
-					<img src="img/team/slide3.jpg" style="width:50%">
-					<div class="text">Caption Three</div>
-				</div>
-
-				<!-- Next and previous buttons -->
-				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-				<a class="next" onclick="plusSlides(1)">&#10095;</a>
-			</div>
-			<br>
-
-			<!-- The dots/circles -->
-			<div style="text-align:center">
-			<span class="dot" onclick="currentSlide(1)"></span> 
-			<span class="dot" onclick="currentSlide(2)"></span> 
-			<span class="dot" onclick="currentSlide(3)"></span> 
-			</div>
-
+		<div class="ism-slider" id="my-slider">
+			<ol>
+				<li>
+					<img src="ism/image/slides/slide1.jpg">
+					<div class="ism-caption ism-caption-0">My slide caption text</div>
+				</li>
+				<li>
+					<img src="ism/image/slides/slide2.jpg">
+					<div class="ism-caption ism-caption-0">My slide caption text</div>
+				</li>
+				<li>
+					<img src="ism/image/slides/slide3.jpg">
+					<div class="ism-caption ism-caption-0">My slide caption text</div>
+				</li>
+				<li>
+					<img src="ism/image/slides/slide4.jpg">
+					<div class="ism-caption ism-caption-0">My slide caption text</div>
+				</li>
+			</ol>
+		</div>
 
 		<div class="wow bounceInDown" data-wow-delay="0.4s">
 			<div class="section-heading">
@@ -675,8 +662,10 @@
 
 	<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
 	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<script src="ism/js/ism-2.2.min.js"></script>
 	<script type="text/javascript">
   		 (function(){
+			   
 			var tit_pop = document.getElementById('titulo_popup')
 			var pre_pop = document.getElementById('precio_popup')
 			var tit_eleccion_mensaje = document.getElementById('titulo_eleccion_mensaje')
