@@ -899,7 +899,7 @@ Parallax
 
 /* Ventana emergente */
 #popup1{
-    visibility: visible;
+    visibility: hidden;
     opacity: 0;
     margin-top: 0;
  }
@@ -920,12 +920,14 @@ Parallax
 
  .popup1-contenedor{
     position: relative;
-    margin:20% auto;
-    padding:30px 50px;
+    margin: 50% 10%;
+    padding:5% 5%;
     background-color: #fafafa;
     color:#333;
-    border-radius: 1px;
+    border-radius: 1%;
     width:80%;
+    right: 5%;
+    bottom: 5%
  }
  
  a.popup1-cerrar{
@@ -953,4 +955,43 @@ Parallax
     -webkit-transform : scale(1.1); /* Chrome - Safari */
     -o-transform : scale(1.1); /* Opera */
     -ms-transform : scale(1.1); /* IE9 */
+}
+/* MODAL */
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
 }
