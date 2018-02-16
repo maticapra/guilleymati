@@ -1015,6 +1015,7 @@ Parallax
   -webkit-background-clip: padding-box;
   -moz-background-clip: padding;
   background-clip: padding-box;
+  height: 400px;
 }
 @-webkit-keyframes ism-fadein {
   from { opacity: 0; }
