@@ -1015,8 +1015,110 @@ Parallax
   -webkit-background-clip: padding-box;
   -moz-background-clip: padding;
   background-clip: padding-box;
-  height: 400px;
 }
+
+#imgprimera{
+     padding-left: 25%;
+     padding-right: 25%; 
+     height: 100%;
+}
+#imgsegunda{
+    padding-left:25%;
+    padding-right:25%;
+    height: 100%;
+}
+#imgtercera{
+    padding-left: 30%;
+    padding-right:30%;
+    height: 100%;
+}
+#imgcuarta{
+    padding-left: 30%;
+    padding-right:30%;
+    height: 100%;
+}
+#imgquinta{
+    padding-left: 40%;
+    padding-right:40%;
+    height: 100%;
+}
+#imgquinta{
+    padding-left: 40%;
+    padding-right:40%;
+    height: 100%;
+}
+#imgsexta{
+    padding-left: 35%;
+    padding-right:35%;
+    height: 100%;
+}
+#imgseptima{
+    padding-left: 30%;
+    padding-right:30%;
+    height: 100%;
+}
+#imgoctava{
+    padding-left: 40%;
+    padding-right:40%;
+    height: 100%;
+}
+#imgnovena{
+    padding-left: 25%;
+    padding-right:25%;
+    height: 100%;
+}#imgdecima{
+    padding-left: 25%;
+    padding-right:25%;
+    height: 100%;
+}
+@media all and (max-width:840px){
+    .ism-slider{
+        height: 300px;
+    }
+    #imgprimera{
+     padding-left:0%;
+     padding-right: 0%; 
+     height: 100%;
+    }
+    #imgsegunda{
+    padding-left:0%;
+    padding-right:0%;
+    }
+    #imgtercera{
+    padding-left:0%;
+    padding-right:0%;
+    }
+    #imgcuarta{
+    padding-left:0%;
+    padding-right:0%;
+    }
+    #imgquinta{
+    padding-left:20%;
+    padding-right:20%;
+    }
+    #imgsexta{
+    padding-left:0%;
+    padding-right:0%;
+    }
+    #imgseptima{
+    padding-left:0%;
+    padding-right:0%;
+    }
+    #imgoctava{
+    padding-left:15%;
+    padding-right:15%;
+    }
+    #imgnovena{
+    padding-left:0%;
+    padding-right:0%;
+    width: 100%;
+    }
+    #imgdecima{
+    padding-left:0%;
+    padding-right:0%;
+    }
+}
+
 @-webkit-keyframes ism-fadein {
   from { opacity: 0; }
   to { opacity: 1; }
