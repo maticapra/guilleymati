@@ -1091,22 +1091,27 @@ Parallax
     #imgcuarta{
     padding-left:0%;
     padding-right:0%;
+    width: 100%;
     }
     #imgquinta{
     padding-left:20%;
     padding-right:20%;
+    height: 100%;
     }
     #imgsexta{
     padding-left:0%;
     padding-right:0%;
+    height: 100%;
     }
     #imgseptima{
     padding-left:0%;
     padding-right:0%;
+    width: 100%;
     }
     #imgoctava{
     padding-left:15%;
     padding-right:15%;
+    height: 100%;
     }
     #imgnovena{
     padding-left:0%;
@@ -1116,6 +1121,7 @@ Parallax
     #imgdecima{
     padding-left:0%;
     padding-right:0%;
+    height: 100%;
     }
 }
 
