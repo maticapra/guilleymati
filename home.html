@@ -55,14 +55,14 @@
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#intro"><img src="img/icons/corazon.png" style="width:15px;height:15px" ></a></li>
-        <li><a href="#fotos">Fotos y videos</a></li>
-		<li><a href="#about">Lista de regalos</a></li>
-		<li><a href="#service">Cómo regalar?</a></li>
-		<li><a href="#contact">Avisanos</a></li>
-		<li><a href="#masinfo">Cómo llegar?</a></li>        
-      </ul>
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#intro"><img src="img/icons/corazon.png" style="width:15px;height:15px" ></a></li>
+					<li><a href="#fotos">Fotos y videos</a></li>
+					<li><a href="#about">Lista de regalos</a></li>
+					<li><a href="#service">Cómo regalar?</a></li>
+					<li><a href="#contact">Avisanos</a></li>
+					<li><a href="#masinfo">Cómo llegar?</a></li>        
+				</ul>
             </div>
             <!-- /.navbar-collapse -->
         </div>
@@ -71,7 +71,6 @@
 
 	<!-- Section: intro -->
     <section id="intro" class="intro">
-	
 		<div class="slogan">
 			<h2>Guille y <span class="text_color">Mati</span> </h2>
 			<h4>Nos casamos y queremos compartirlo</h4>
@@ -90,8 +89,6 @@
 				<h2>Fotos</h2>
 				<p>Queremos compartirles algunas de las imágenes</p>
 			</div>
-			
-			
 		</div>
 
 		<div class="ism-slider" id="my-slider">
@@ -166,15 +163,12 @@
 									De todas maneras, dejamos esta lista para quienes quieran y puedan ayudarnos en esta nueva etapa que comenzamos juntos :)
 								</p>
 								<i class="fa fa-2x fa-angle-down"></i>
-
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-
-		
 		
 		<div class="container">	
 			<div class="row">
@@ -388,17 +382,11 @@
             	</div>
 			</div>				
 		</div>	
-
-		<!--  ----------------------------------------------------------------------------------------------------------------   -->
-
-	
-	
-
 	</section>
 	<!-- /Section: about -->	
+	
 	<!-- Section: services -->
-    <section id="service" class="home-section text-center bg-gray">
-		
+    <section id="service" class="home-section text-center bg-gray">	
 		<div class="heading-about">
 			<div class="container">
 				<div class="row">
@@ -407,7 +395,6 @@
 							<div class="section-heading">
 								<h2>¡Es fácil!</h2>
 								<i class="fa fa-2x fa-angle-down"></i>
-
 							</div>
 						</div>
 					</div>
@@ -477,9 +464,6 @@
 		</div>
 	</section>
 	<!-- /Section: services -->
-	
-
-	
 
 	<!-- Section: contact -->
     <section id="contact" class="home-section text-center">
@@ -491,7 +475,6 @@
 						<div class="section-heading">
 						<h2>Avisanos</h2>
 						<i class="fa fa-2x fa-angle-down"></i>
-
 						</div>
 						</div>
 					</div>
@@ -499,7 +482,6 @@
 			</div>
 		</div>
 		<div class="container">
-
 			<div class="row">
 				<div class="col-lg-2 col-lg-offset-5">
 					<hr class="marginbot-50">
@@ -510,94 +492,93 @@
 					<div class="boxed-grey">
 						<div id="sendmessage">Tu mensaje ya fue enviado. ¡Gracias!</div>
 						<div id="errormessage"></div>
-
-							<div class="row">
-								<div class="col-md-6">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="form-group">
+									<label for="name">
+										Nombre</label>
+									<input type="text" name="name" class="form-control" id="name" placeholder="Tu nombre" data-rule="minlen:4" data-msg="Por favor, completá al menos 4 caracteres" />
+									<div class="validation"></div>
+								</div>
+								<div class="form-group">
+									<label for="email">
+										Email</label>
 									<div class="form-group">
-										<label for="name">
-											Nombre</label>
-										<input type="text" name="name" class="form-control" id="name" placeholder="Tu nombre" data-rule="minlen:4" data-msg="Por favor, completá al menos 4 caracteres" />
-										<div class="validation"></div>
-									</div>
-									<div class="form-group">
-										<label for="email">
-											Email</label>
-										<div class="form-group">
-											<input type="email" class="form-control" name="email" id="email" placeholder="Tu Email" data-rule="email" data-msg="Por favor, completá con un email válido!" />
-											<div class="validation"></div>
-										</div>
-									</div>
-									<div class="form-group">
-										<label for="subject">
-											Título</label>
-										<input type="text" class="form-control" name="subject" id="subject" placeholder="Título del mensaje" data-rule="minlen:4" data-msg="Por favor, completá al menos 8 caracteres para el título" />
+										<input type="email" class="form-control" name="email" id="email" placeholder="Tu Email" data-rule="email" data-msg="Por favor, completá con un email válido!" />
 										<div class="validation"></div>
 									</div>
 								</div>
-								<div class="col-md-6">
-									<div class="form-group">
-										<label for="name">
-											Mensaje</label>
-										<textarea class="form-control" name="message" id="message" rows="5" data-rule="required" data-msg="Te olvidaste de escribirnos un mensaje! " placeholder="Dejanos un mensaje. Gracias!!!"></textarea>
-										<div class="validation"></div>
-									</div>
-								</div>
-								<div class="col-md-6">
-									<div class="form-group">
-										<label>Eleccion</label>
-										<label for="titulo_eleccion_mensaje" id="titulo_eleccion_mensaje"></label>
-										<hr />
-										<label>Precio: </label>
-										<label for="precio_eleccion_mensaje" id="precio_eleccion_mensaje"></label>										
-										<div class="validation"></div>
-									</div>
-								</div>
-								<div class="col-md-12">
-									<button type="submit" class="btn btn-skin pull-right" id="btnContactUs">
-										¡Enviar!</button>
+								<div class="form-group">
+									<label for="subject">
+										Título</label>
+									<input type="text" class="form-control" name="subject" id="subject" placeholder="Título del mensaje" data-rule="minlen:4" data-msg="Por favor, completá al menos 8 caracteres para el título" />
+									<div class="validation"></div>
 								</div>
 							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+									<label for="name">
+										Mensaje</label>
+									<textarea class="form-control" name="message" id="message" rows="5" data-rule="required" data-msg="Te olvidaste de escribirnos un mensaje! " placeholder="Dejanos un mensaje. Gracias!!!"></textarea>
+									<div class="validation"></div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+									<label>Eleccion</label>
+									<label for="titulo_eleccion_mensaje" id="titulo_eleccion_mensaje"></label>
+									<hr />
+									<label>Precio: </label>
+									<label for="precio_eleccion_mensaje" id="precio_eleccion_mensaje"></label>										
+									<div class="validation"></div>
+								</div>
+							</div>
+							<div class="col-md-12">
+								<button type="submit" class="btn btn-skin pull-right" id="btnContactUs">
+									¡Enviar!</button>
+							</div>
+						</div>
 					</div>
 				</div>
 				
 				<div class="col-lg-4">
 					<div class="widget-contact">
-						<h5>¿Dónde nos casamos?</h5>
-						
+						<h5>¿Dónde nos casamos?</h5>	
 						<address>
-						<strong>Iglesia</strong><br>
-						<p>Ermita de Schöenstatt City Bell<br>
-						Calle 28 236, B1896 City Bell, Buenos Aires</p>
-						<ul class="company-social">
-							<li >
-								<a href="https://goo.gl/maps/Jfzw8jyEZj32" target="_blank">
-									<img src="img/icons/google-maps.png" height="100%"  >
-								</a>
-							</li>
-						</ul>	
-						<strong>Fiesta</strong><br>
-						<p>Las Casuarinas Campo<br>
-						Calle 76 y 139, La Plata, Bs. As.</p>
-						<ul class="company-social">
-							<li class="social-facebook"><a href="https://www.facebook.com/Casuarinas.lp.campo/" target="_blank"><i class="fa fa-facebook"></i></a></li>
-							<li >
-								<a href="https://goo.gl/maps/igr8R7pyUaQ2" >
-									<img src="img/icons/google-maps.png" height="100%"  >
-								</a>
-							</li>
-						</ul>
+							<strong>Iglesia</strong><br>
+							<p>Ermita de Schöenstatt City Bell<br>
+							Calle 28 236, B1896 City Bell, Buenos Aires</p>
+							<ul class="company-social">
+								<li >
+									<a href="https://goo.gl/maps/Jfzw8jyEZj32" target="_blank">
+										<img src="img/icons/google-maps.png" height="100%"  >
+									</a>
+								</li>
+							</ul>	
+							<strong>Fiesta</strong><br>
+							<p>Las Casuarinas Campo<br>
+							Calle 76 y 139, La Plata, Bs. As.</p>
+							<ul class="company-social">
+								<li class="social-facebook">
+									<a href="https://www.facebook.com/Casuarinas.lp.campo/" target="_blank">
+										<i class="fa fa-facebook"></i>
+									</a>
+								</li>
+								<li >
+									<a href="https://goo.gl/maps/igr8R7pyUaQ2" >
+										<img src="img/icons/google-maps.png" height="100%"  >
+									</a>
+								</li>
+							</ul>
 						</address>
 
 						<address>
 							<strong>Sino mandanos un email</strong><br>
 							<a href="mailto:#">matias.cpr@gmail.com</a>
-						</address>	
-
-					
+						</address>				
 					</div>	
 				</div>
 			</div>	
-
 		</div>
 	</section>
 	<!-- /Section: contact -->
@@ -619,7 +600,16 @@
 									<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2599.4493097242344!2d-58.05763768537439!3d-34.887638880386916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2dc2cf8b59ee7%3A0x47d72d8f9a4349b8!2sErmita+de+Schoenstatt+City+Bell!5e1!3m2!1ses-419!2sar!4v1519289350420" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
 								</div>
 							</div>
-							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="heading-contact">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-lg-offset-2">
+						<div class="wow bounceInDown" data-wow-delay="0.4s">
 							<div class="section-heading">
 								<br />
 								<h3>Fiesta</h3>
@@ -631,10 +621,6 @@
 									<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2597.048546644988!2d-57.958514985371814!3d-34.96345578036785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e8f97cba46b1%3A0x87d586b1f32f3b5c!2sLas+Casuarinas!5e1!3m2!1ses-419!2sar!4v1519289644938" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
 								</div>
 							</div>
-
-
-
-
 						</div>
 					</div>							
 				</div>
@@ -643,21 +629,21 @@
 	</section>
 
 	<div class="modal-wrapper" id="popup1">
-			<div class="popup1-contenedor">
-			   <h2>¡Buena elección!</h2>
-			   <h3 id="titulo_popup"></h3>
-			   <h3 id="precio_popup"></h3>
-			   <p>Podes realizar una transferencia bancaria del importe elegido a la siguiente cuenta:
-					<br />
-					CBU: 0150519101000130522660 - Alias: SUMA.RETO.ARMADA - Cuenta: Caja de ahorro $ 0519/01130522/66
-					<br />
-					Titular: Guillermina Sendin - CUIL/CUIT: 27-36778496-8
-					<hr />
-				   	Sino habrá una alcancía en la fiesta para que puedas llevar efectivo. 
-					<a href="#contact"><button type="submit" class="btn btn-skin pull-right" id="btnConfirmar">¡Confirmar!</button></a>
-			    </p>			   
-				<a class="popup1-cerrar" href="#about">X</a>
-			</div>
+		<div class="popup1-contenedor">
+			<h2>¡Buena elección!</h2>
+			<h3 id="titulo_popup"></h3>
+			<h3 id="precio_popup"></h3>
+			<p>Podes realizar una transferencia bancaria del importe elegido a la siguiente cuenta:
+				<br />
+				CBU: 0150519101000130522660 - Alias: SUMA.RETO.ARMADA - Cuenta: Caja de ahorro $ 0519/01130522/66
+				<br />
+				Titular: Guillermina Sendin - CUIL/CUIT: 27-36778496-8
+				<hr />
+				Sino habrá una alcancía en la fiesta para que puedas llevar efectivo. 
+				<a href="#contact"><button type="submit" class="btn btn-skin pull-right" id="btnConfirmar">¡Confirmar!</button></a>
+			</p>			   
+			<a class="popup1-cerrar" href="#about">X</a>
+		</div>
 	</div>		
 
 	<footer>
