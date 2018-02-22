@@ -11,9 +11,11 @@
 @font-face {
 
 font-family: 'dulcelin-webfont';
-src: url("../css/fonts/dulcelin-webfont/dulcelin-webfont.ttf");
-src: url("../css/fonts/dulcelin-webfont/dulcelin-webfont.ttf") format(‘truetype’);
-
+src: url("../css/fonts/dulcelin-webfont/dulcelin-webfont.eot");
+src: url("../css/fonts/dulcelin-webfont/dulcelin-webfont.eot?#iefix") format('embedded-opentype'),
+     url("../css/fonts/dulcelin-webfont/dulcelin-webfont.woff") format('woff'),
+     url("../css/fonts/dulcelin-webfont/dulcelin-webfont.ttf") format('truetype'),
+     url("../css/fonts/dulcelin-webfont/dulcelin-webfont.svg") format('svg');
 }
 
 body {
